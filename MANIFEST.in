@@ -1,1 +1,4 @@
-include test.txt
+include bot.csv
+recursive-include . *.json
+recursive-include *.json
+graft assets

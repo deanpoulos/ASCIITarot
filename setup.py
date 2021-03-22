@@ -9,10 +9,10 @@ setuptools.setup(
     author="Dean Poulos",
     author_email="dean.poulos7@gmail.com",
     description="A command-line tool for tarot readings",
+    include_package_data=True,
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/deanpoulos/ASCIITarot",
-    include_package_data=True,
     project_urls={
         "Bug Tracker": "https://github.com/deanpoulos/ASCIITarot/issues",
     },
@@ -22,6 +22,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     package_dir={"": "src"},
+    package_data={'': ['assets/*']},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
 )
